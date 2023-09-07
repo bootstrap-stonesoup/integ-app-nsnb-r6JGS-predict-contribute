@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-6z25
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/nbe-e2e-xeki-tenant/integ-app-nsnb/devfile-sample-python-basic-6z25@sha256:9657f5e3b0585ba7b0852fe9428cdad538814d797e212064e12532d2cba822a0
+        name: my-python
+        resources: {}
+status: {}
